@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Pereira">
+    <meta name="Description" content="Site para quem esta entediado">
+    <title>Entediado...</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="fontvendor/css/all.css">
+    <link rel="shortcut icon" href="assets/img/entediado.png" type="image/x-icon"> 
+</head>
+<body>
+
+    <div class="navbar" >
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div>
+
+        <nav>
+            <ul id="ulMenu">
+                <li class="liMenu"></li>
+                    <a href="#footer">INFORMAÇÕES</a>
+                </li>
+
+                <li class="liMenu">
+                    <a href="#navResult" id="menuAjuda">AJUDA</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <header>
+
+        <p>Nao Fique Entediado!</p>
+
+    </header>
+
+    <main>
+
+        <section id="ButtonSection">
+
+            <p>Aperte para achar algo que mate seu tédio!</p>
+            <button>Pesquisar</button>
+
+        </section>
+
+        <section>
+
+            <h1>Resultado</h1>
+            <nav id="navResult">
+                <ul id="ulResult">
+                   <li class="liResult">
+                       Tipo:&nbsp; <p id="Tipo" class="pResult"></p>            
+                   </li>
+
+                   <li class="liResult">
+                       acessibilidade:&nbsp; <p id="Acessibilidade" class="pResult"></p>
+                   </li>
+
+                   <li class="liResult">
+                       Participantes:&nbsp; <p id="Participantes" class="pResult"></p>
+                   </li>
+
+                   <li class="liResult">
+                       Link:&nbsp; <button id="Link" class="pResult" ></button>
+                   </li>
+               </ul>
+            </nav>
+
+            <div id="divAtividade">
+
+                <h2>Atividade:</h2>
+                <p id="Atividade"></p>
+
+            </div>
+
+            <div id="divButtonPontos">
+
+                <button id="buttonAtividadeCumprida">Completar Atividade?</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="moedaFixa">
+
+        <input type="text" readonly>
+        <img src="assets/img/entediado.png" alt="Moeda De Pontos">
+
+    </div>
+
+    <footer id="footer">
+
+        <p id="Empresa">Nao Fique Entediado-Copyright©1945-2019</p>
+        <a id="linkAPI"  href="https://www.boredapi.com" target = _blank>API-usada:https://www.boredapi.com/</a>
+        <p id="Author">Lucas Pereira Trindade</p>
+
+    </footer>
+
+    
+ <script src="assets/js/script.js"></script>
+</body>
+</html>

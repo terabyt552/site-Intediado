@@ -1,0 +1,305 @@
+:root {
+    --cor-principal:rgb(24,68,194);
+    --cinza-escuro:rgb(51, 51, 51);
+    --branco:rgb(230, 230, 230);
+}
+
+/*fonts*/
+
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/RobotoFamily/static/RobotoSlab-Medium.ttf');
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoFamily/static/RobotoSlab-Regular.ttf');
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoFamily/static/RobotoSlab-Bold.ttf');
+    font-weight: bold;
+}
+
+body, p, ul, h1, h2 {
+    margin: 0;
+}
+
+/*MenuTop*/
+
+.navbar {
+    position: absolute;
+    z-index: 1;
+    height: 48px;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 10px;
+    
+}
+
+div nav {
+    position: absolute;
+    background-color: var(--cinza-escuro);
+    max-height: 0;
+    overflow: hidden;
+    width: 180px;
+    transition: max-height 0.5s;
+}
+
+.mostrar {
+    max-height: 100vh;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+}
+
+#ulMenu {
+    padding-left:60px ;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+}
+
+.liMenu {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+a {
+    color: white;
+    font-family: RobotoMedium;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*header, buttonDePesquisa*/
+
+
+header {
+    min-height: 19vh;
+    background: rgb(29,63,139);
+    background: linear-gradient(0deg, rgba(29,63,139,1) 0%, rgba(24,68,194,1) 100%, rgba(29,63,139,1) 0%);
+}
+ 
+header p {
+    
+    margin: 0;
+    color: white;
+    font-family: RobotoMedium;
+    font-size: 25px;
+    text-align: center;
+    padding-top:40px;
+}
+
+section {
+    min-height: 27vh;
+    margin: 10px 0;
+    padding-bottom: 15px;  
+}
+
+#ButtonSection {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--cinza-escuro);
+    border-bottom: 1px solid var(--cinza-escuro);
+    background: var(--branco);
+    
+}
+
+#ButtonSection button {
+    width: 80px;
+    height: 35px;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    font-family: RobotoRegular;
+    background-color: white;
+}
+
+#ButtonSection p {
+    padding-bottom: 15px;
+    font-family: RobotoMedium;
+    font-size: 15px;
+    color: var(--cinza-escuro);
+}
+
+/*AbaDeRetornoDasCaracteristicasDaAtividade*/
+
+
+#paragrafoResultado {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: RobotoRegular;
+    font-size: 20px;
+    color: var(--cinza-escuro);
+}
+
+#ulResult {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid var(--cinza-escuro);
+      padding: 0;
+ }
+
+ .liResult {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     list-style: none;
+     margin: 5px 0;
+     border:1px solid var(--branco);
+     font-family: RobotoBold;
+     font-size: 15px;
+     color: var(--cinza-escuro);
+}
+
+.pResult, #Atividade {
+    font-family: RobotoRegular;
+    font-size: 14px;
+}
+
+#Link {
+    border:0;
+   display: none;
+   background-color: transparent;
+}
+
+/*RetornoDaAtividade*/
+
+
+#divAtividade {
+    border:1px solid var(--branco);
+    min-height: 21vh;
+}
+
+h2 {
+    text-align: center;
+    font-family: RobotoBold;
+    font-size: 15px;
+    color: var(--cinza-escuro);
+}
+
+#divButtonPontos {
+    display: flex;
+    justify-content: center;
+}
+
+#buttonAtividadeCompleta {
+    margin-top:20px ;
+    font-family: RobotoRegular;
+}
+
+/*footer*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 18vh;
+    background: rgb(29,63,139);
+    background: linear-gradient(0deg, rgba(29,63,139,1) 0%, rgba(24,68,194,1) 100%, rgba(29,63,139,1) 0%);
+}
+
+ #Empresa, #Author{
+    padding-top: 70px;
+    text-align: center;
+    font-family: RobotoRegular;
+    font-size: 10px;
+    color: white;
+}
+
+#linkAPI{
+    font-family: RobotoRegular;
+    font-size: 10px;
+    color: white;
+}
+
+#linkAPI:hover{
+    font-size: 15px;
+    color: black;
+}
+
+/*EspaçoParaImagemEInputDosPontos*/
+
+
+#moedaFixa:hover {
+    display: none;
+}
+
+#moedaFixa img {
+    width: 105px;
+    height: 105px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+input {
+    width: 50px;
+    z-index: 1;
+    position: fixed;
+    bottom: 60px;
+    right: 45px;
+    border-radius: 2px;
+    border: 1px solid gainsboro;
+    text-align: center;
+}
+
+/*MinhasMediaQuers*/
+
+
+@media (min-width: 1280px) {
+    #ulResult {
+        flex-direction: row;
+        justify-content: space-around;
+   }
+
+   .liResult {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 22px;
+}
+
+#Atividade {
+    padding-top:15px;
+    text-align: center;
+}
+
+.pResult {
+  text-align: center;
+}
+
+}
+
+@media (max-width: 375px) {
+    #moedaFixa img {
+        width: 90px;
+        height: 90px;
+        bottom: 18px;
+        right: 18px;
+    }
+
+    input {
+        width: 47px;
+        bottom: 50px;
+        right: 39px;
+    }
+}
+
+
+
+
+
+
+
+
