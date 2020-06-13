@@ -93,7 +93,7 @@ var opçoes = { method: 'GET',
 
 
 function obtendoRespostaDaAPI() {
-fetch(`https://www.boredapi.com/api/activity/`, opçoes)
+fetch(`https://www.boredapi.com/api/activity`, opçoes)
 .then(Response => {Response.json()
 .then(data => {implementandoRespostaDaAPI(data)
 })
